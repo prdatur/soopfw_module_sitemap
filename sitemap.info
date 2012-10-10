@@ -1,0 +1,8 @@
+;Information
+version = 1
+name = "Sitemap"
+description = "A sitemap generator"
+
+;Define rights
+rights[] = "admin.sitemap.manage"
+
