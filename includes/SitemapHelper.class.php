@@ -27,10 +27,10 @@ class SitemapHelper extends Object {
 		$output = array();
 
 		// Get the output path,
-		$output_path = SITEPATH . self::$instance->core->get_dbconfig("sitemap", sitemap::CONFIG_OUTPUT_PATH, '/');
+		$output_path = SITEPATH . self::$instance->core->get_dbconfig("sitemap", Sitemap::CONFIG_OUTPUT_PATH, '/');
 
 		// Get config if sitemap should be compressed
-		$generate_gz = (self::$instance->core->get_dbconfig("sitemap", sitemap::CONFIG_ENABLE_GZIP, 'yes') == 'yes');
+		$generate_gz = (self::$instance->core->get_dbconfig("sitemap", Sitemap::CONFIG_ENABLE_GZIP, 'yes') == 'yes');
 
 		// Get all sitemap entries.
 		$entries = self::get_sitemap_entries();
@@ -95,7 +95,7 @@ class SitemapHelper extends Object {
 		$sites = array();
 
 		// Get all available sections.
-		$sections = self::$instance->core->get_dbconfig("sitemap", sitemap::CONFIG_GENERATE_ELEMENTS, array());
+		$sections = self::$instance->core->get_dbconfig("sitemap", Sitemap::CONFIG_GENERATE_ELEMENTS, array());
 
 		// Call all configured modules to return wanted pathes.
 

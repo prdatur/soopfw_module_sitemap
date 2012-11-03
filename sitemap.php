@@ -5,7 +5,7 @@
  * @copyright Christian Ackermann (c) 2010 - End of life
  * @author Christian Ackermann <prdatur@gmail.com>
  */
-class sitemap extends ActionModul
+class Sitemap extends ActionModul
 {
 	/**
 	 * Define config constances
