@@ -30,7 +30,7 @@ class cli_generate_sitemap extends CLICommand
 	 * callback for on_success
 	 */
 	public function on_success() {
-		CliHelper::console_log('Sitemap generated', 'ok');
+		$this->core->message("Sitemap generated: ", Core::MESSAGE_TYPE_SUCCESS);
 	}
 
 }
