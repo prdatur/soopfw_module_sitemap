@@ -31,7 +31,7 @@ class cli_generate_sitemap extends CLICommand
 	 * callback for on_success
 	 */
 	public function on_success() {
-		$this->core->message("Sitemap generated: ", Core::MESSAGE_TYPE_SUCCESS);
+		$this->core->message(t("Sitemap generated"), Core::MESSAGE_TYPE_SUCCESS);
 	}
 
 }
